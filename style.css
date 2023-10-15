@@ -1,0 +1,83 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 95vmin;
+  width: 95vmin;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+}
+
+.line-bumi {
+  height: 80vmin;
+  width: 80vmin;
+  border-top: 2px solid rgb(57, 57, 255);
+  border-right: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 50px;
+  animation: rotasi 20s ease infinite;
+}
+
+.matahari {
+  background-color: rgb(255, 60, 0);
+  border-radius: 50%;
+  height: 15vmin;
+  width: 15vmin;
+  margin: auto;
+  margin-top: 30vmin;
+  box-shadow: 0 0 3px 3px rgb(255, 60, 0);
+}
+
+.line-bulan {
+  width: 15vmin;
+  height: 15vmin;
+  border-top: 1px solid white;
+  border-right: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  margin-left: 61vmin;
+  margin-top: -40vmin;
+  animation: rotasi 20s ease infinite;
+}
+
+.line-bulan .bumi {
+  height: 4vmin;
+  width: 4vmin;
+  background-color: rgb(57, 57, 255);
+  border-radius: 50%;
+  margin-top: 5vmin;
+  margin-left: 5.5vmin;
+  box-shadow: 0 0 1px 1px rgb(57, 57, 255);
+}
+
+.line-bulan .bulan {
+  height: 2vmin;
+  width: 2vmin;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -7.5vmin;
+  margin-left: 12vmin;
+  box-shadow: 0 0 1px 1px white;
+}
+
+@keyframes rotasi {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
